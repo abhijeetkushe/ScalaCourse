@@ -1,0 +1,10 @@
+sbt eclipsify
+sbt eclipse
+eclipse
+test
+submit abhijeet.kushe@gmail.com HchwTF2kxH
+styleCheck
+clean
+compile
+scalaTest
+exit

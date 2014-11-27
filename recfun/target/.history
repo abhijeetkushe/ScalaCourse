@@ -1,0 +1,4 @@
+sbt eclipsify
+sbt eclipse
+eclipse
+exit

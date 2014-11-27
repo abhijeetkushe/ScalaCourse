@@ -1,0 +1,55 @@
+[0m[[31merror[0m] [0mError occured while reading the output file of ScalaTest[0m
+[0m[[31merror[0m] [0mjava.io.FileNotFoundException: /Users/akushe/Downloads/funsets/scalaTestLog.txt (No such file or directory)[0m
+[0m[[31merror[0m] [0mPicked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8[0m
+[0m[[31merror[0m] [0mException in thread "main" java.security.AccessControlException: access denied (java.io.FilePermission /Users/akushe/Downloads/funsets/target/scala-2.10/test-classes read)[0m
+[0m[[31merror[0m] [0m	at java.security.AccessControlContext.checkPermission(AccessControlContext.java:376)[0m
+[0m[[31merror[0m] [0m	at java.security.AccessController.checkPermission(AccessController.java:549)[0m
+[0m[[31merror[0m] [0m	at java.lang.SecurityManager.checkPermission(SecurityManager.java:532)[0m
+[0m[[31merror[0m] [0m	at java.lang.SecurityManager.checkRead(SecurityManager.java:871)[0m
+[0m[[31merror[0m] [0m	at java.io.File.isDirectory(File.java:752)[0m
+[0m[[31merror[0m] [0m	at java.io.File.toURI(File.java:661)[0m
+[0m[[31merror[0m] [0m	at org.scalatest.tools.Runner$$anonfun$29.apply(Runner.scala:1686)[0m
+[0m[[31merror[0m] [0m	at org.scalatest.tools.Runner$$anonfun$29.apply(Runner.scala:1674)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)[0m
+[0m[[31merror[0m] [0m	at scala.collection.immutable.List.foreach(List.scala:318)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)[0m
+[0m[[31merror[0m] [0m	at scala.collection.AbstractTraversable.map(Traversable.scala:105)[0m
+[0m[[31merror[0m] [0m	at org.scalatest.tools.Runner$.getRunpathClassLoader(Runner.scala:1674)[0m
+[0m[[31merror[0m] [0m	at org.scalatest.tools.Runner$.withClassLoaderAndDispatchReporter(Runner.scala:1639)[0m
+[0m[[31merror[0m] [0m	at org.scalatest.tools.Runner$.runOptionallyWithPassFailReporter(Runner.scala:703)[0m
+[0m[[31merror[0m] [0m	at org.scalatest.tools.Runner$.main(Runner.scala:573)[0m
+[0m[[31merror[0m] [0m	at org.scalatest.tools.Runner.main(Runner.scala)[0m
+java.io.FileNotFoundException: /Users/akushe/Downloads/funsets/scalaTestLog.txt (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at scala.io.Source$.fromFile(Source.scala:91)
+	at scala.io.Source$.fromFile(Source.scala:76)
+	at scala.io.Source$.fromFile(Source.scala:54)
+	at ScalaTestRunner$.runScalaTest(ScalaTestRunner.scala:138)
+	at ProgFunBuild$$anonfun$7.apply(ProgFunBuild.scala:314)
+	at ProgFunBuild$$anonfun$7.apply(ProgFunBuild.scala:309)
+	at sbt.Scoped$$anonfun$hf7$1.apply(Structure.scala:583)
+	at sbt.Scoped$$anonfun$hf7$1.apply(Structure.scala:583)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:49)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$12.apply(Structure.scala:311)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:41)
+	at sbt.std.Transform$$anon$5.work(System.scala:71)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:232)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:238)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:232)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:680)
+[0m[[31merror[0m] [0m(assignment/*:[31mscalaTest[0m) java.io.FileNotFoundException: /Users/akushe/Downloads/funsets/scalaTestLog.txt (No such file or directory)[0m
